@@ -51,7 +51,7 @@ while True:
     break
   
 
-while no_of_guesses < 6 and not guessed_correctly:
+while no_of_guesses < 6 and guessed_correctly == False:
 
   guess = input("Input a 5 digit Number and Press enter: \n")
   print("You have guessed", guess)
@@ -61,5 +61,6 @@ while no_of_guesses < 6 and not guessed_correctly:
 
   if guessed_correctly:
     print("Congratulations! You guess the correct work in", no_of_guesses, "tries!")
-  else:
+
+  if no_of_guesses == 6:
     print("You have used up all your guesses...the correct word is", answer)
