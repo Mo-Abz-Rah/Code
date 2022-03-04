@@ -60,7 +60,7 @@ while no_of_guesses < 6 and guessed_correctly == False:
   guessed_correctly = Answer_checker(answer, guess)
 
   if guessed_correctly:
-    print("Congratulations! You guess the correct work in", no_of_guesses, "tries!")
+    print("Congratulations! You guess the correct code in", no_of_guesses, "tries!")
 
-  if no_of_guesses == 6:
-    print("You have used up all your guesses...the correct word is", answer)
+  if no_of_guesses == 7:
+    print("You have used up all your guesses...the correct code is", answer)
